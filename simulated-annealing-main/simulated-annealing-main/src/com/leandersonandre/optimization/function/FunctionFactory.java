@@ -14,6 +14,8 @@ public class FunctionFactory {
         return switch (functionName) {
             case "ACKLEY" -> new AckleyFunction();
             case "BUKIN6" -> new BukinFunctionN6();
+            case "BOOTH" -> new BoothFunction();
+            case "GRAMACYLEE" -> new GramacyLeeFunction();
             default -> throw new IllegalArgumentException("Unknown function name: " + functionName);
         };
     }
